@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/xyblog-admin/xyblog-admin.iml" filepath="$PROJECT_DIR$/xyblog-admin/xyblog-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xyblog-backEnd.iml" filepath="$PROJECT_DIR$/xyblog-backEnd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xyblog-common/xyblog-common.iml" filepath="$PROJECT_DIR$/xyblog-common/xyblog-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xyblog-mbg/xyblog-mbg.iml" filepath="$PROJECT_DIR$/xyblog-mbg/xyblog-mbg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xyblog-portal/xyblog-portal.iml" filepath="$PROJECT_DIR$/xyblog-portal/xyblog-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xyblog-search/xyblog-search.iml" filepath="$PROJECT_DIR$/xyblog-search/xyblog-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xyblog-security/xyblog-security.iml" filepath="$PROJECT_DIR$/xyblog-security/xyblog-security.iml" />
+    </modules>
+  </component>
+</project>

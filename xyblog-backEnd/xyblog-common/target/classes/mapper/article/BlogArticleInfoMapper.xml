@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.xinyuan.blog.mapper.article.BlogArticleInfoMapper">
+    <sql id="manageArticleColumn">
+        id, title, summary, author, category_id, is_Publish, is_top, is_recommend, read_num, comment_num,
+        like_num, create_by, modified_by
+    </sql>
+
+    <sql id="portalArticleColumn">
+        a.id,title,summary,author,is_top, is_recommend, read_num,comment_num,like_num,content_format,a.create_by,a.modified_by
+    </sql>
+
+    <select id="listArticleDTO" resultType="cn.xinyuan.blog.entity.article.DTO.ArticleDTO">
+        SELECT <include refid="manageArticleColumn"/> FROM blog_article_info bai
+        <where>
+            <if test="params.title!=null and params.title != ''">
+                AND bai.title LIKE concat("%",#{params.title},"%")
+            </if>
+        </where>
+        ORDER BY bai.modified_by DESC
+    </select>
+
+    <select id="queryArticlesCondition" resultType="cn.xinyuan.blog.entity.article.DTO.ArticleDTO">
+        SELECT <include refid="manageArticleColumn"/> FROM blog_article_info
+        <where>
+            <if test="params.recommend != null and params.recommend != ''">
+                and is_recommend = true
+            </if>
+            <if test="params.categoryId !=null and params.categoryId != ''">
+                and find_in_set(#{params.categoryId},category_id)
+            </if>
+            and is_publish = TRUE
+        </where>
+        <if test="params.recommend !=null and params.recommend != ''">
+            order by is_top desc, is_recommend desc
+        </if>
+        <if test="params.latest !=null and params.latest != ''">
+            order by is_top desc,create_by desc
+        </if>
+        <if test="params.favorite !=null and params.favorite != ''">
+            order by is_top desc,like_num desc
+        </if>
+    </select>
+
+    <!--根据主键获取文章内容-->
+    <select id="queryArticleById" resultType="cn.xinyuan.blog.entity.article.VO.ArticleVO">
+        SELECT <include refid="portalArticleColumn"/>
+        FROM blog_article_info AS a INNER JOIN blog_article_content AS b ON a.id=b.article_id
+        WHERE a.id=#{ArticleId}
+    </select>
+</mapper>

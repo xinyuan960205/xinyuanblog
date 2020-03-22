@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="xyblog-admin" />
+        <module name="xyblog-common" />
+        <module name="xyblog-mbg" />
+        <module name="xyblog-portal" />
+        <module name="xyblog-search" />
+        <module name="xyblog-security" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xyblog-admin" target="1.8" />
+      <module name="xyblog-backEnd" target="1.8" />
+      <module name="xyblog-common" target="1.8" />
+      <module name="xyblog-mbg" target="1.8" />
+      <module name="xyblog-portal" target="1.8" />
+      <module name="xyblog-search" target="1.8" />
+      <module name="xyblog-security" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

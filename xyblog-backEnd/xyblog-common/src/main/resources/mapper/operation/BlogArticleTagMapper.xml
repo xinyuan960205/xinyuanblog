@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.xinyuan.blog.mapper.operation.BlogArticleTagMapper">
+
+    <select id="getTagsByArticleId" resultType="cn.xinyuan.blog.entity.operation.BlogTagInfo">
+        SELECT b.*
+        FROM blog_article_tag AS a RIGHT JOIN blog_tag_info AS b
+        ON a.tag_id=b.id
+        WHERE a.article_id=#{articleId}
+    </select>
+</mapper>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.xinyuan.blog.mapper.timeline.TimelineMapper">
+    <select id="listTimeLine" resultType="cn.xinyuan.blog.entity.timeline.Timeline">
+        SELECT t.year, COUNT(t.year) AS count FROM
+        (SELECT id, title, summary, create_by, DATE_FORMAT(a.create_by, '%Y') AS year FROM blog_article_info AS a WHERE a.is_publish=TRUE ) AS t
+    </select>
+
+    <select id="listTimelinePost" resultType="cn.xinyuan.blog.entity.timeline.TimelinePost">
+        SELECT a.id, a.title, a.summary AS description, 'article' AS postType, a.create_by AS createTime
+        FROM blog_article_info AS a
+        WHERE DATE_FORMAT(a.create_by, '%Y')=#{year} AND DATE_FORMAT(a.create_by, '%m')=#{month}
+    </select>
+</mapper>

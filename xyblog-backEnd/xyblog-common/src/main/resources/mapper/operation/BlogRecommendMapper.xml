@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.xinyuan.blog.mapper.operation.BlogRecommendMapper">
+    <select id="listSelect" resultType="cn.xinyuan.blog.entity.operation.VO.BlogRecommendVO">
+        SELECT a.id AS linkId, a.title, 0 AS type
+        FROM blog_article_info a WHERE a.is_publish=TRUE
+    </select>
+
+    <sql id="Base_Column_List">
+        id, link_id, type, order_num, title, top, create_by AS createTime, read_num, like_num, comment_num, description
+    </sql>
+
+    <select id="listRecommendVo" resultType="cn.xinyuan.blog.entity.operation.VO.BlogRecommendVO">
+        SELECT r.id, r.link_id, r.type, r.order_num, r.title, r.top, r.create_by AS createTime,
+        a.read_num, a.like_num, a.comment_num, a.summary AS description
+        FROM blog_recommend AS r INNER JOIN blog_article_info AS a ON r.link_id=a.id
+        ORDER BY r.top DESC, r.id DESC limit 5
+    </select>
+</mapper>
