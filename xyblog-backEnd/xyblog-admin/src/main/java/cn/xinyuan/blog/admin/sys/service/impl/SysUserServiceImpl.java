@@ -40,14 +40,14 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
      * @return
      */
     @Override
-    public List<Integer> queryAllMenuId(Integer userId) {
+    public List<Integer> queryAllMenuId(Long userId) {
         return baseMapper.queryAllMenuId(userId);
     }
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
         String username = (String) params.get("username");
-        Integer createUserId = (Integer) params.get("createUserId");
+        Long createUserId = (Long) params.get("createUserId");
         IPage<SysUser> iPage = baseMapper.selectPage(
                 new Query<SysUser>(params).getPage(),
                 new QueryWrapper<SysUser>().lambda()
@@ -63,7 +63,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
      */
     @Override
     @Transactional(rollbackFor = Exception.class)
-    public int deleteBatch(Integer[] userIds) {
+    public int deleteBatch(Long[] userIds) {
         baseMapper.deleteBatchIds(Arrays.asList(userIds));
         iSysUserRoleService.deleteBatch(userIds);
         return 1;
@@ -91,7 +91,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
     public int updateUser(SysUser user) {
         baseMapper.updateById(user);
         //先删除，再添加
-        iSysUserRoleService.deleteBatch(new Integer[]{user.getId()});
+        iSysUserRoleService.deleteBatch(new Long[]{user.getId()});
         iSysUserRoleService.insertByUser(user);
         return 1;
     }

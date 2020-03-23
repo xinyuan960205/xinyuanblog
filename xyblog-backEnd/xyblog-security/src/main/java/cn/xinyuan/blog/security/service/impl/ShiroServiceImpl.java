@@ -49,7 +49,7 @@ public class ShiroServiceImpl implements ShiroService {
      * @return
      */
     @Override
-    public Set<String> getUserPermissions(Integer userId) {
+    public Set<String> getUserPermissions(Long userId) {
          List<String> permsList;
 
          //系统管理员，拥有最高权限
@@ -88,7 +88,7 @@ public class ShiroServiceImpl implements ShiroService {
      * @return
      */
     @Override
-    public SysUser queryUser(Integer userId) {
+    public SysUser queryUser(Long userId) {
         return sysUserMapper.selectById(userId);
     }
 
@@ -99,7 +99,7 @@ public class ShiroServiceImpl implements ShiroService {
      * @param accessToken
      */
     @Override
-    public void refreshToken(Integer userId, String accessToken) {
+    public void refreshToken(Long userId, String accessToken) {
         sysUserTokenService.refreshToken(userId,accessToken);
     }
 }

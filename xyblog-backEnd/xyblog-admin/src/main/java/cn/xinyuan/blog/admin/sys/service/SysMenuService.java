@@ -19,7 +19,7 @@ public interface SysMenuService extends IService<SysMenu>{
      * @param userId
      * @return
      */
-    List<SysMenu> listUserMenu(Integer userId);
+    List<SysMenu> listUserMenu(Long userId);
 
     /**
      * 根据父菜单，查询子菜单
@@ -42,6 +42,6 @@ public interface SysMenuService extends IService<SysMenu>{
     /**
      * 获取用户菜单列表
      */
-    List<SysMenu> getUserMenuList(Integer userId);
+    List<SysMenu> getUserMenuList(Long userId);
 
 }

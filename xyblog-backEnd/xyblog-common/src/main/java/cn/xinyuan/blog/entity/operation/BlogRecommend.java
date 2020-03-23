@@ -1,7 +1,9 @@
 package cn.xinyuan.blog.entity.operation;
 
+import cn.xinyuan.blog.common.base.baseEntity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -21,19 +23,14 @@ import java.util.Date;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class BlogRecommend implements Serializable {
+public class BlogRecommend extends baseEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 主键，自增
-     */
-    @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
-
-    /**
      * 推荐的文章id
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     private Long linkId;
 
     /**
@@ -55,16 +52,4 @@ public class BlogRecommend implements Serializable {
      * 置顶
      */
     private Boolean top;
-
-    /**
-     * 创建时间
-     */
-    private Date createBy;
-
-    /**
-     * 修改时间
-     */
-    private Date modifiedBy;
-
-
 }

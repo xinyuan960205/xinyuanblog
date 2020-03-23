@@ -35,7 +35,7 @@ public class SysUserTokenServiceImpl implements SysUserTokenService {
      * @return
      */
     @Override
-    public Result createToken(Integer userId) {
+    public Result createToken(Long userId) {
         //生成一个token
         String token = TokenGenerator.generateValue();
 
@@ -73,7 +73,7 @@ public class SysUserTokenServiceImpl implements SysUserTokenService {
         }
         SysUserToken sysUserToken=new SysUserToken();
         sysUserToken.setToken(token);
-        sysUserToken.setUserId(Integer.parseInt(userId));
+        sysUserToken.setUserId(Long.valueOf(userId));
         return sysUserToken;
     }
 
@@ -83,7 +83,7 @@ public class SysUserTokenServiceImpl implements SysUserTokenService {
      * @param userId
      */
     @Override
-    public void logout(Integer userId) {
+    public void logout(Long userId) {
         String userIdKey= RedisKeyConstants.MANAGE_SYS_USER_TOKEN+userId;
         String token=redisUtils.get(userIdKey);
         String tokenKey= RedisKeyConstants.MANAGE_SYS_USER_TOKEN+token;
@@ -98,7 +98,7 @@ public class SysUserTokenServiceImpl implements SysUserTokenService {
      * @param token
      */
     @Override
-    public void refreshToken(Integer userId, String token) {
+    public void refreshToken(Long userId, String token) {
         String tokenKey= RedisKeyConstants.MANAGE_SYS_USER_TOKEN+token;
         String userIdKey= RedisKeyConstants.MANAGE_SYS_USER_TOKEN+userId;
         redisUtils.updateExpire(tokenKey);

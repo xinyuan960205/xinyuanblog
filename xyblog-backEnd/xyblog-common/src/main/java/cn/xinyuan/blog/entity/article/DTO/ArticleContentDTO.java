@@ -19,8 +19,12 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class ArticleContentDTO extends BlogArticleInfo {
+
     private List<BlogTagInfo> tagList;
+
     @NotBlank(message="博文内容不能为空", groups = {AddGroup.class, UpdateGroup.class})
     private String content;
+
+    @NotBlank(message="博文内容格式不能为空", groups = {AddGroup.class, UpdateGroup.class})
     private String contentFormat;
 }

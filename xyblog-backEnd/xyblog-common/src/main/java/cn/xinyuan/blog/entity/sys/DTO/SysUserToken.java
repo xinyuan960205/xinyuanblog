@@ -1,5 +1,6 @@
 package cn.xinyuan.blog.entity.sys.DTO;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
 
@@ -13,6 +14,10 @@ import lombok.Data;
 @ApiModel(value="SysUserToken对象", description="系统用户Token")
 public class SysUserToken {
     private static final long serialVersionUID = 1L;
-    private Integer userId;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
+    private Long userId;
+
+
     private String token;
 }

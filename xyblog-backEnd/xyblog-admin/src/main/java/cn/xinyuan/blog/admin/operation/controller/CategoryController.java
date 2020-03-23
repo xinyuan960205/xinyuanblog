@@ -51,9 +51,9 @@ public class CategoryController {
 
         //添加顶级分类
         BlogCategoryInfo root = new BlogCategoryInfo();
-        root.setId((long) -1);
+        root.setId(-1L);
         root.setCategoryName("根目录");
-        root.setParentId((long)-1);
+        root.setParentId(-1L);
         categoryList.add(root);
 
         return Result.success(categoryList);
@@ -63,7 +63,7 @@ public class CategoryController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    public Result info(@PathVariable("id") Integer id){
+    public Result info(@PathVariable("id") Long id){
         BlogCategoryInfo category = iBlogCategoryInfoService.getById(id);
 
         return Result.success(category);
@@ -121,6 +121,9 @@ public class CategoryController {
      */
     @RequestMapping("/update")
     public Result update(@RequestBody BlogCategoryInfo category){
+        // 数据校验
+        ValidatorUtils.validateEntity(category);
+        verifyCategory(category);
         iBlogCategoryInfoService.updateById(category);
         return Result.success();
     }
@@ -129,7 +132,7 @@ public class CategoryController {
      * 删除
      */
     @DeleteMapping("/delete/{id}")
-    public Result delete(@PathVariable Integer id){
+    public Result delete(@PathVariable Long id){
 
         //判断是否有子菜单或按钮
         List<BlogCategoryInfo> categoryList = iBlogCategoryInfoService.queryListParentId(id);
@@ -149,7 +152,7 @@ public class CategoryController {
 //            return Result.failed("该类别下有笔记，无法删除");
 //        }
 
-        iBlogCategoryInfoService.removeById((long)id);
+        iBlogCategoryInfoService.removeById(id);
 
         return Result.success();
     }

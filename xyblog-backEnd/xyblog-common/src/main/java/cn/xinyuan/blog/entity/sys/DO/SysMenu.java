@@ -1,5 +1,6 @@
 package cn.xinyuan.blog.entity.sys.DO;
 
+import cn.xinyuan.blog.common.base.baseEntity;
 import com.baomidou.mybatisplus.annotation.FieldStrategy;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

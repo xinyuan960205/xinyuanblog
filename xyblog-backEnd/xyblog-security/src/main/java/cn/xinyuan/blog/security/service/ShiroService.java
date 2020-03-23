@@ -20,7 +20,7 @@ public interface ShiroService {
      * @param userId
      * @return
      */
-    Set<String> getUserPermissions(Integer userId);
+    Set<String> getUserPermissions(Long userId);
 
     /**
      * 查询token
@@ -34,12 +34,12 @@ public interface ShiroService {
      * @param userId
      * @return
      */
-    SysUser queryUser(Integer userId);
+    SysUser queryUser(Long userId);
 
     /**
      * 续期
      * @param userId
      * @param accessToken
      */
-    void refreshToken(Integer userId, String accessToken);
+    void refreshToken(Long userId, String accessToken);
 }

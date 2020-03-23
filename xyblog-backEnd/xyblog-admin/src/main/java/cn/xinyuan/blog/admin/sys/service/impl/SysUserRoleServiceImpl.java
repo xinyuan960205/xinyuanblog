@@ -29,8 +29,8 @@ public class SysUserRoleServiceImpl extends ServiceImpl<SysUserRoleMapper, SysUs
      * @return
      */
     @Override
-    public int deleteBatch(Integer[] userIds) {
-        for(Integer userid : userIds){
+    public int deleteBatch(Long[] userIds) {
+        for(Long userid : userIds){
             baseMapper.delete(new QueryWrapper<SysUserRole>().lambda()
                     .eq(SysUserRole::getUserId,userid));
         }

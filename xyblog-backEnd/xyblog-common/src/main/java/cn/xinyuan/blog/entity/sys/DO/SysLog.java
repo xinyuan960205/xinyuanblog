@@ -1,5 +1,6 @@
 package cn.xinyuan.blog.entity.sys.DO;
 
+import cn.xinyuan.blog.common.base.baseEntity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
@@ -21,15 +22,9 @@ import java.util.Date;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class SysLog implements Serializable {
+public class SysLog extends baseEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
-    /**
-     * 主键，自增
-     */
-    @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
 
     /**
      * 操作地址的IP
@@ -50,16 +45,5 @@ public class SysLog implements Serializable {
      * 操作的浏览器
      */
     private String operateBy;
-
-    /**
-     * 创建时间
-     */
-    private Date createBy;
-
-    /**
-     * 修改时间
-     */
-    private Date modifiedBy;
-
 
 }

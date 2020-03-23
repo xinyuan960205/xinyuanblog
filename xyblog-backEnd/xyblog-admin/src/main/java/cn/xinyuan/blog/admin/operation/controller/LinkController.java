@@ -39,7 +39,7 @@ public class LinkController {
      * 信息
      */
     @GetMapping("/info/{id}")
-    public Result info(@PathVariable("id") String id){
+    public Result info(@PathVariable("id") Long id){
         BlogLink link = iBlogLinkService.getById(id);
         return Result.success(link);
     }
@@ -68,7 +68,7 @@ public class LinkController {
      * 删除
      */
     @DeleteMapping("/delete")
-    public Result delete(@RequestBody String[] ids){
+    public Result delete(@RequestBody Long[] ids){
         iBlogLinkService.removeByIds(Arrays.asList(ids));
         return Result.success();
     }

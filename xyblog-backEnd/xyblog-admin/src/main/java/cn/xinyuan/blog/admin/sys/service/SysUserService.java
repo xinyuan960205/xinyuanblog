@@ -19,11 +19,11 @@ public interface SysUserService extends IService<SysUser> {
      * @param userId
      * @return
      */
-    List<Integer> queryAllMenuId(Integer userId);
+    List<Integer> queryAllMenuId(Long userId);
 
     PageUtils queryPage(Map<String, Object> params);
 
-    int deleteBatch(Integer[] userIds);
+    int deleteBatch(Long[] userIds);
 
     int saveUser(SysUser user);
 

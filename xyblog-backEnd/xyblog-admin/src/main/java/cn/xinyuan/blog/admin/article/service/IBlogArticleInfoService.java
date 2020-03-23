@@ -24,5 +24,5 @@ public interface IBlogArticleInfoService extends IService<BlogArticleInfo> {
 
     int updateArticle(ArticleContentDTO article);
 
-    boolean checkByCategory(Integer id);
+    boolean checkByCategory(Long id);
 }

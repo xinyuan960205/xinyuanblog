@@ -1,7 +1,11 @@
 package cn.xinyuan.blog.entity.sys.DO;
 
+import cn.xinyuan.blog.common.base.baseEntity;
+import cn.xinyuan.blog.common.validator.group.AddGroup;
+import cn.xinyuan.blog.common.validator.group.UpdateGroup;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -21,35 +25,20 @@ import java.util.Date;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class SysRoleMenu implements Serializable {
+public class SysRoleMenu extends baseEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 主键，自增
-     */
-    @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
-
-    /**
      * 角色ID
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     private Long roleId;
 
     /**
      * 菜单ID
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     private Long menuId;
-
-    /**
-     * 创建时间
-     */
-    private Date createBy;
-
-    /**
-     * 修改时间
-     */
-    private Date modifiedBy;
-
 
 }

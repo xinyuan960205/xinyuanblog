@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @ClassName: SysMenuServiceImpl
@@ -37,9 +38,9 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> impl
      * @return
      */
     @Override
-    public List<SysMenu> listUserMenu(Integer userId) {
+    public List<SysMenu> listUserMenu(Long userId) {
         //系统管理员，拥有最高权限
-        if(SysConstants.SUPER_ADMIN.equals(userId)){
+        if(userId.equals(SysConstants.SUPER_ADMIN)){
             return getAllMenuList(null);
         }
         //用户菜单列表
@@ -119,7 +120,7 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> impl
      * @param userId
      */
     @Override
-    public List<SysMenu> getUserMenuList(Integer userId) {
+    public List<SysMenu> getUserMenuList(Long userId) {
         return null;
     }
 

@@ -1,10 +1,12 @@
 package cn.xinyuan.blog.entity.sys.DO;
 
+import cn.xinyuan.blog.common.base.baseEntity;
 import cn.xinyuan.blog.common.validator.group.AddGroup;
 import cn.xinyuan.blog.common.validator.group.UpdateGroup;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -24,13 +26,9 @@ import java.util.List;
  */
 @Data
 @ApiModel(value="SysUser对象", description="用户管理")
-public class SysUser implements Serializable {
+public class SysUser extends baseEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
-    @ApiModelProperty(value = "主键")
-    @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
 
     @NotBlank(message = "用户名不能为空" , groups = {AddGroup.class, UpdateGroup.class})
     @ApiModelProperty(value = "用户名")
@@ -52,13 +50,8 @@ public class SysUser implements Serializable {
     private Integer status;
 
     @ApiModelProperty(value = "创建者Id")
-    private Integer createUserId;
-
-    @ApiModelProperty(value = "创建时间")
-    private Date createBy;
-
-    @ApiModelProperty(value = "更改时间")
-    private Date modifiedBy;
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
+    private Long createUserId;
 
     @TableField(exist=false)
     private List<Integer> roleIdList;

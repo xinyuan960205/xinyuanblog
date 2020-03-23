@@ -1,7 +1,9 @@
 package cn.xinyuan.blog.entity.operation;
 
+import cn.xinyuan.blog.common.base.baseEntity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -21,40 +23,24 @@ import java.util.Date;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class BlogArticleTag implements Serializable {
+public class BlogArticleTag extends baseEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 主键，自增
-     */
-    @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
-
-    /**
      * 标签id
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     private Long tagId;
 
     /**
      * 文章id
      */
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     private Long articleId;
-
-    /**
-     * 创建时间
-     */
-    private Date createBy;
-
-    /**
-     * 修改时间
-     */
-    private Date modifiedBy;
 
     /**
      * 是否有效，默认为1有效，为0无效
      */
     private Boolean isEffective;
-
-
 }

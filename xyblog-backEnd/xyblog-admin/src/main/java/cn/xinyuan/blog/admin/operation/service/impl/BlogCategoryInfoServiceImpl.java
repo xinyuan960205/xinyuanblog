@@ -39,14 +39,14 @@ public class BlogCategoryInfoServiceImpl extends ServiceImpl<BlogCategoryInfoMap
         String[] ids = id.split(",");
         ArrayList<String> categoryStrList = new ArrayList<>();
         for (String s : ids) {
-            BlogCategoryInfo blogCategoryInfo = baseMapper.selectById(Integer.parseInt(s));
+            BlogCategoryInfo blogCategoryInfo = baseMapper.selectById(s);
             categoryStrList.add(blogCategoryInfo.getCategoryName());
         }
         return String.join("/", categoryStrList);
     }
 
     @Override
-    public List<BlogCategoryInfo> queryListParentId(Integer id) {
+    public List<BlogCategoryInfo> queryListParentId(Long id) {
         List<BlogCategoryInfo> categoryInfos = baseMapper.selectList(new QueryWrapper<BlogCategoryInfo>().lambda()
                 .eq(BlogCategoryInfo::getParentId, id));
         return categoryInfos;

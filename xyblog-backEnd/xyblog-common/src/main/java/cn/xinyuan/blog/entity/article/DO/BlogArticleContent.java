@@ -1,7 +1,9 @@
 package cn.xinyuan.blog.entity.article.DO;
 
 import cn.xinyuan.blog.common.base.baseEntity;
+import com.baomidou.mybatisplus.annotation.FieldStrategy;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Builder;
@@ -37,10 +39,12 @@ public class BlogArticleContent extends baseEntity implements Serializable {
     /**
      * 文章内容
      */
+    @TableField(strategy = FieldStrategy.IGNORED)
     private String content;
 
     /**
      * 文章内容的网页显示格式
      */
+    @TableField(strategy = FieldStrategy.IGNORED)
     private String contentFormat;
 }

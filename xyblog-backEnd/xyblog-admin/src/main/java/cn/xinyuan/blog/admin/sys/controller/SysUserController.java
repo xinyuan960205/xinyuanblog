@@ -114,7 +114,7 @@ public class SysUserController extends AbstractController{
      */
     @PostMapping("/delete")
     @RequiresPermissions("sys:user:delete")
-    public Result delete(@RequestBody Integer[] userIds){
+    public Result delete(@RequestBody Long[] userIds){
         if(ArrayUtils.contains(userIds, SysConstants.SUPER_ADMIN)){
             return Result.failed("系统管理员不能删除");
         }

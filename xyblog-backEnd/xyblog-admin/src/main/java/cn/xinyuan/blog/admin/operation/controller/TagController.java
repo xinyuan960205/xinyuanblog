@@ -55,7 +55,7 @@ public class TagController {
      * 信息
      */
     @GetMapping("/info/{id}")
-    public Result info(@PathVariable("id") String id){
+    public Result info(@PathVariable("id") Long id){
         BlogTagInfo tag = iBlogTagInfoService.getById(id);
         return Result.success(tag);
     }
@@ -84,8 +84,8 @@ public class TagController {
      * 删除
      */
     @DeleteMapping("/delete")
-    public Result delete(@RequestBody String[] ids){
-        for (String id : ids) {
+    public Result delete(@RequestBody Long[] ids){
+        for (Long id : ids) {
             List<BlogArticleTag> tagLinkList = blogArticleTagMapper.selectList(new QueryWrapper<BlogArticleTag>().lambda()
                     .eq(BlogArticleTag::getTagId, id));
             if(!CollectionUtils.isEmpty(tagLinkList)) {

@@ -23,11 +23,11 @@ public interface IBlogRecommendService extends IService<BlogRecommend> {
 
     List<BlogRecommendVO> listSelect();
 
-    int updateTop(Integer id);
+    int updateTop(Long id);
 
     int saveRecommend(BlogRecommend recommend);
 
-    int removePatch(List<String> list);
+    int removePatch(List<Long> list);
 
-    int deleteByArticleId(List<String> list);
+    int deleteByArticleId(List<Long> list);
 }

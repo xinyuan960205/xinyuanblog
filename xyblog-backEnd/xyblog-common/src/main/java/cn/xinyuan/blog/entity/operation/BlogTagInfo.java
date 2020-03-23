@@ -1,5 +1,6 @@
 package cn.xinyuan.blog.entity.operation;
 
+import cn.xinyuan.blog.common.base.baseEntity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
@@ -21,15 +22,9 @@ import java.util.Date;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class BlogTagInfo implements Serializable {
+public class BlogTagInfo extends baseEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
-    /**
-     * 主键，自增
-     */
-    @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
 
     /**
      * 标签名称
@@ -47,19 +42,7 @@ public class BlogTagInfo implements Serializable {
     private Integer tagNumber;
 
     /**
-     * 创建时间
-     */
-    private Date createBy;
-
-    /**
-     * 修改时间
-     */
-    private Date modifiedBy;
-
-    /**
      * 是否有效，默认为1有效，为0无效
      */
     private Boolean isEffective;
-
-
 }

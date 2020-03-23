@@ -1,8 +1,10 @@
 package cn.xinyuan.blog.entity.operation;
 
+import cn.xinyuan.blog.common.base.baseEntity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -22,15 +24,9 @@ import java.util.Date;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class BlogCategoryInfo implements Serializable {
+public class BlogCategoryInfo extends baseEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
-    /**
-     * 主键，自增
-     */
-    @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
 
     /**
      * 分类名称
@@ -51,17 +47,9 @@ public class BlogCategoryInfo implements Serializable {
      * 父目录，默认-1表示当前等级是最高，没有父目录
      */
     @TableField("parent_id")
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     private Long parentId;
 
-    /**
-     * 创建时间
-     */
-    private Date createBy;
-
-    /**
-     * 修改时间
-     */
-    private Date modifiedBy;
 
     /**
      * 是否有效，默认为1有效，为0无效

@@ -37,7 +37,8 @@ public class BlogRecommendServiceImpl extends ServiceImpl<BlogRecommendMapper, B
     public PageUtils queryPage(Map<String, Object> params) {
         String title = (String) params.get("title");
         IPage<BlogRecommend> page = baseMapper.selectPage(new Query<BlogRecommend>(params).getPage(),
-                new QueryWrapper<BlogRecommend>().lambda().eq(StringUtils.isNotEmpty(title),BlogRecommend::getTitle,title));
+                new QueryWrapper<BlogRecommend>().lambda()
+                        .like(StringUtils.isNotEmpty(title),BlogRecommend::getTitle,title));
         return new PageUtils(page);
     }
 
@@ -47,10 +48,10 @@ public class BlogRecommendServiceImpl extends ServiceImpl<BlogRecommendMapper, B
     }
 
     @Override
-    public int updateTop(Integer id) {
+    public int updateTop(Long id) {
         BlogRecommend blogRecommend = new BlogRecommend();
         blogRecommend.setTop(true);
-        blogRecommend.setId(Long.valueOf(id));
+        blogRecommend.setId(id);
         baseMapper.updateById(blogRecommend);
         //将其余的置顶状态都置为false
         blogRecommend.setTop(false);
@@ -74,8 +75,8 @@ public class BlogRecommendServiceImpl extends ServiceImpl<BlogRecommendMapper, B
 
     @Override
     @Transactional(rollbackFor = Exception.class)
-    public int removePatch(List<String> list) {
-        for(String s:list){
+    public int removePatch(List<Long> list) {
+        for(Long s:list){
             BlogRecommend blogRecommend = baseMapper.selectOne(new QueryWrapper<BlogRecommend>().lambda()
                     .eq(BlogRecommend::getId, s));
             //更新文章的推荐状态
@@ -89,11 +90,11 @@ public class BlogRecommendServiceImpl extends ServiceImpl<BlogRecommendMapper, B
     }
 
     @Override
-    public int deleteByArticleId(List<String> list) {
-        for(String s : list){
+    public int deleteByArticleId(List<Long> list) {
+        for(Long s : list){
             //更新文章的推荐状态
             BlogArticleInfo blogArticleInfo=new BlogArticleInfo();
-            blogArticleInfo.setId(Long.valueOf(s));
+            blogArticleInfo.setId(s);
             blogArticleInfo.setIsRecommend(false);
             iBlogArticleInfoService.updateById(blogArticleInfo);
             baseMapper.delete(new QueryWrapper<BlogRecommend>().lambda()

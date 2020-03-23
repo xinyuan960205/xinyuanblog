@@ -50,7 +50,7 @@ public class RecommendController {
      * 信息
      */
     @GetMapping("/info/{id}")
-    public Result info(@PathVariable("id") String id){
+    public Result info(@PathVariable("id") Long id){
         BlogRecommend recommend = iBlogRecommendService.getById(id);
 
         return Result.success(recommend);
@@ -77,7 +77,7 @@ public class RecommendController {
     }
 
     @PutMapping("/top/{id}")
-    public Result updateTop (@PathVariable Integer id) {
+    public Result updateTop (@PathVariable Long id) {
         iBlogRecommendService.updateTop(id);
         return Result.success();
     }
@@ -86,7 +86,7 @@ public class RecommendController {
      * 删除
      */
     @DeleteMapping("/delete")
-    public Result delete(@RequestBody String[] ids){
+    public Result delete(@RequestBody Long[] ids){
         iBlogRecommendService.removePatch(Arrays.asList(ids));
         return Result.success();
     }
@@ -95,7 +95,7 @@ public class RecommendController {
      * 根据文章id删除
      */
     @DeleteMapping("/deleteByArticleId")
-    public Result deleteByArticleId(@RequestBody String[] ids){
+    public Result deleteByArticleId(@RequestBody Long[] ids){
         iBlogRecommendService.deleteByArticleId(Arrays.asList(ids));
         return Result.success();
     }

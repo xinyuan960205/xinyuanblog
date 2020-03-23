@@ -1,5 +1,6 @@
 package cn.xinyuan.blog.entity.sys.DO;
 
+import cn.xinyuan.blog.common.base.baseEntity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -23,15 +24,9 @@ import java.util.List;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class SysRole implements Serializable {
+public class SysRole extends baseEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
-    /**
-     * 主键，自增
-     */
-    @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
 
     /**
      * 角色名称
@@ -47,16 +42,6 @@ public class SysRole implements Serializable {
      * 创建者ID
      */
     private String createUserId;
-
-    /**
-     * 创建时间
-     */
-    private Date createBy;
-
-    /**
-     * 修改时间
-     */
-    private Date modifiedBy;
 
     @TableField(exist=false)
     private List<Integer> menuIdList;

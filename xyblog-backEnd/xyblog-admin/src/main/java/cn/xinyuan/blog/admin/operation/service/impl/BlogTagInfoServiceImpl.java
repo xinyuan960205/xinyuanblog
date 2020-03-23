@@ -8,6 +8,7 @@ import cn.xinyuan.blog.mapper.operation.BlogTagInfoMapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -37,8 +38,10 @@ public class BlogTagInfoServiceImpl extends ServiceImpl<BlogTagInfoMapper, BlogT
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
+        String key = (String) params.get("key");
         IPage<BlogTagInfo> page = baseMapper.selectPage(new Query<BlogTagInfo>(params).getPage(),
-                new QueryWrapper<BlogTagInfo>().lambda());
+                new QueryWrapper<BlogTagInfo>().lambda()
+                        .like(StringUtils.isNotEmpty(key),BlogTagInfo::getTagName,key));
         return new PageUtils(page);
     }
 

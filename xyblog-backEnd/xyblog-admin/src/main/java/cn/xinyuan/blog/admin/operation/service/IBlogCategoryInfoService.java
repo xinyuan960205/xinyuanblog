@@ -20,5 +20,5 @@ public interface IBlogCategoryInfoService extends IService<BlogCategoryInfo> {
 
     String getCategorysByArticleId(String id, int value);
 
-    List<BlogCategoryInfo> queryListParentId(Integer id);
+    List<BlogCategoryInfo> queryListParentId(Long id);
 }

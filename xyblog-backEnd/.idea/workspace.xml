@@ -19,61 +19,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ArticleController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xyblog-portal/src/main/java/cn/xinyuan/blog/portal/article/controller/ArticleController.java">
+      <file leaf-file-name="RecommendController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/controller/RecommendController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            <state relative-caret-position="295">
+              <caret line="37" column="51" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
               <folding>
-                <element signature="method#getArticleList#0;class#ArticleController#0" expanded="true" />
+                <element signature="method#select#0;class#RecommendController#0" expanded="true" />
+                <element signature="method#info#0;class#RecommendController#0" expanded="true" />
+                <element signature="method#updateTop#0;class#RecommendController#0" expanded="true" />
+                <element signature="method#delete#0;class#RecommendController#0" expanded="true" />
+                <element signature="method#deleteByArticleId#0;class#RecommendController#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticleService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xyblog-portal/src/main/java/cn/xinyuan/blog/portal/article/service/ArticleService.java">
+      <file leaf-file-name="BlogRecommendServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/impl/BlogRecommendServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="236">
+              <caret line="37" column="52" lean-forward="true" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
+              <folding>
+                <element signature="method#deleteByArticleId#0;class#BlogRecommendServiceImpl#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SysUserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/controller/SysUserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticleServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xyblog-portal/src/main/java/cn/xinyuan/blog/portal/article/service/impl/ArticleServiceImpl.java">
+      <file leaf-file-name="SysUserServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysUserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
               <folding>
-                <element signature="method#getArticleById#0;class#ArticleServiceImpl#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlogArticleInfoServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/article/service/impl/BlogArticleInfoServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-              <folding>
-                <element signature="method#deleteArticlePatch#0;class#BlogArticleInfoServiceImpl#0" expanded="true" />
-                <element signature="method#getArticle#0;class#BlogArticleInfoServiceImpl#0" expanded="true" />
-                <element signature="method#updateArticle#0;class#BlogArticleInfoServiceImpl#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlogCategoryInfoServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/impl/BlogCategoryInfoServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="41" column="77" lean-forward="false" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="77" />
-              <folding>
-                <element signature="method#queryListParentId#0;class#BlogCategoryInfoServiceImpl#0" expanded="true" />
+                <element signature="method#deleteBatch#0;class#SysUserServiceImpl#0" expanded="true" />
+                <element signature="method#updateUser#0;class#SysUserServiceImpl#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,57 +95,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/resources/mapper/operation/BlogRecommendMapper.xml" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/resources/mapper/article/BlogArticleInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/IBlogRecommendService.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/impl/BlogRecommendServiceImpl.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/controller/RecommendController.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/timeline/TimeLineMonth.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/timeline/TimeLine.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/timeline/Timeline.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/timeline/TimelinePost.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/timeline/TimelineMonth.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/resources/mapper/timeline/TimelineMapper.xml.fxml" />
-        <option value="$PROJECT_DIR$/xyblog-portal/src/main/java/cn/xinyuan/blog/portal/timeLine/service/ITimelineService.java" />
-        <option value="$PROJECT_DIR$/xyblog-portal/src/main/java/cn/xinyuan/blog/portal/timeLine/service/impl/TimelineServiceImpl.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/mapper/timeline/TimelineMapper.java" />
-        <option value="$PROJECT_DIR$/xyblog-portal/src/main/java/cn/xinyuan/blog/portal/timeLine/controller/TimeLineController.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/resources/mapper/timeline/TimelineMapper.xml" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysUserRole.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/mapper/sys/SysLogMapper.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/mapper/sys/SysRoleMenuMapper.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/mapper/sys/SysUserRoleMapper.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/mapper/sys/SysRoleMapper.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysRoleMenu.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysLog.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/controller/SysUserController.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/SysUserService.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/ISysUserRoleService.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysUserRoleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysRole.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/ISysRoleService.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysRoleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/controller/SysRoleController.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/ISysRoleMenuService.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysRoleMenuServiceImpl.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/SysMenuService.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysMenuServiceImpl.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/controller/SysMenuController.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/controller/SysParamController.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/SysParamService.java" />
         <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysParamServiceImpl.java" />
         <option value="$PROJECT_DIR$/xyblog-search/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/common/fill/MyMetaObjectHandler.java" />
         <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/article/DO/BlogArticleInfo.java" />
         <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/article/controller/ArticleController.java" />
         <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/article/service/IBlogArticleInfoService.java" />
-        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/article/service/impl/BlogArticleInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/article/service/impl/BlogArticleContentServiceImpl.java" />
         <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/impl/BlogArticleTagServiceImpl.java" />
         <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/common/base/baseEntity.java" />
-        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/article/DO/BlogArticleContent.java" />
         <option value="$PROJECT_DIR$/xyblog-portal/src/main/java/cn/xinyuan/blog/portal/article/controller/ArticleController.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/article/DO/BlogArticleContent.java" />
+        <option value="$PROJECT_DIR$/xyblog-portal/src/main/java/cn/xinyuan/blog/portal/operation/service/impl/RecommandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/timeline/Timeline.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/operation/BlogLink.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/operation/BlogTagInfo.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysLog.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysMenu.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysParam.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysRole.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/article/service/impl/BlogArticleInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/controller/LinkController.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/IBlogRecommendService.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/controller/RecommendController.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/controller/TagController.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/common/base/AbstractController.java" />
+        <option value="$PROJECT_DIR$/xyblog-security/src/main/java/cn/xinyuan/blog/security/service/SysUserTokenService.java" />
+        <option value="$PROJECT_DIR$/xyblog-security/src/main/java/cn/xinyuan/blog/security/OAuth2Realm.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/mapper/sys/SysUserMapper.java" />
+        <option value="$PROJECT_DIR$/xyblog-security/src/main/java/cn/xinyuan/blog/security/service/ShiroService.java" />
+        <option value="$PROJECT_DIR$/xyblog-security/src/main/java/cn/xinyuan/blog/security/service/impl/ShiroServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xyblog-security/src/main/java/cn/xinyuan/blog/security/service/impl/SysUserTokenServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/SysUserService.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/ISysUserRoleService.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysUserRoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/controller/SysUserController.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/SysMenuService.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysMenuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/common/constants/SysConstants.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/operation/BlogCategoryInfo.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/impl/BlogCategoryInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/controller/CategoryController.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/operation/BlogArticleTag.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/operation/BlogRecommend.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/article/DTO/ArticleContentDTO.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysRoleMenu.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysUser.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysUserRole.java" />
+        <option value="$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DTO/SysUserToken.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/impl/BlogTagInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/impl/BlogRecommendServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysUserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -342,6 +333,60 @@
             <path>
               <item name="xyblog-backEnd" type="b2602c69:ProjectViewProjectNode" />
               <item name="xyblog-backEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="xyblog-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="xinyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="operation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyblog-backEnd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyblog-backEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="xyblog-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="xinyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="operation" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyblog-backEnd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyblog-backEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="xyblog-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="xinyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="sys" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyblog-backEnd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyblog-backEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="xyblog-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="xinyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="sys" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyblog-backEnd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyblog-backEnd" type="462c0819:PsiDirectoryNode" />
               <item name="xyblog-common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -406,32 +451,6 @@
               <item name="xinyuan" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyblog-backEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyblog-backEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="xyblog-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="xinyuan" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xyblog-backEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xyblog-backEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="xyblog-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="xinyuan" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="fill" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xyblog-backEnd" type="b2602c69:ProjectViewProjectNode" />
@@ -665,6 +684,33 @@
             <path>
               <item name="xyblog-backEnd" type="b2602c69:ProjectViewProjectNode" />
               <item name="xyblog-backEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="xyblog-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="xinyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+              <item name="operation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyblog-backEnd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyblog-backEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="xyblog-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="xinyuan" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+              <item name="operation" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyblog-backEnd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyblog-backEnd" type="462c0819:PsiDirectoryNode" />
               <item name="xyblog-search" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -693,9 +739,9 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -914,11 +960,12 @@
       <workItem from="1584676316406" duration="4350000" />
       <workItem from="1584772313578" duration="9066000" />
       <workItem from="1584871616566" duration="2323000" />
+      <workItem from="1584931257620" duration="12219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189199000" />
+    <option name="totallyTimeSpent" value="201418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="1" width="1936" height="1056" extended-state="6" />
@@ -933,13 +980,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39597315" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47651008" sideWeight="0.49785408" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25055927" sideWeight="0.49785408" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Word Book" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Word Book" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28809014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2167382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26555794" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -947,7 +994,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39709172" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37919462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -964,315 +1011,291 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="24" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/controller/SysUserController.java">
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/controller/LinkController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="30" column="57" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="57" />
+        <state relative-caret-position="609">
+          <caret line="72" column="32" lean-forward="true" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
           <folding>
-            <element signature="method#list#0;class#SysUserController#0" expanded="false" />
-            <element signature="method#save#0;class#SysUserController#0" expanded="false" />
-            <element signature="method#update#0;class#SysUserController#0" expanded="false" />
-            <element signature="method#delete#0;class#SysUserController#0" expanded="false" />
-            <element signature="method#info#1;class#SysUserController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/ISysRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysUserRoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/ISysUserRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="67" column="32" lean-forward="true" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1776">
-          <caret line="58" column="28" lean-forward="false" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysRoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1776">
-          <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/ISysRoleMenuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/controller/SysRoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2442">
-          <caret line="114" column="36" lean-forward="false" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#list#0;class#SysRoleController#0" expanded="false" />
-            <element signature="method#select#0;class#SysRoleController#0" expanded="false" />
-            <element signature="method#save#0;class#SysRoleController#0" expanded="false" />
-            <element signature="method#update#0;class#SysRoleController#0" expanded="false" />
-            <element signature="method#delete#0;class#SysRoleController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysRoleMenuServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="36" column="41" lean-forward="true" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/mapper/sys/SysMenuMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/resources/mapper/sys/SysMenuMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1581226807921" expanded="true" signature="304:379" ph="select * fro... sys_menu" />
-            <marker date="1581226807921" expanded="true" signature="491:552" ph="select * fro... sys_menu" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/SysMenuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1480">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysMenuServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/controller/SysMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="138" column="47" lean-forward="true" selection-start-line="138" selection-start-column="47" selection-end-line="138" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#nav#0;class#SysMenuController#0" expanded="false" />
-            <element signature="method#list#0;class#SysMenuController#0" expanded="false" />
-            <element signature="method#select#0;class#SysMenuController#0" expanded="false" />
-            <element signature="method#update#0;class#SysMenuController#0" expanded="false" />
-            <element signature="method#save#0;class#SysMenuController#0" expanded="false" />
-            <element signature="method#update#1;class#SysMenuController#0" expanded="false" />
-            <element signature="method#verifyForm#0;class#SysMenuController#0" expanded="false" />
+            <element signature="method#list#0;class#LinkController#0" expanded="false" />
+            <element signature="method#info#0;class#LinkController#0" expanded="false" />
+            <element signature="method#save#0;class#LinkController#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.0.1/mybatis-plus-extension-3.0.1.jar!/com/baomidou/mybatisplus/extension/service/IService.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="224">
           <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-search/src/main/java/cn/xinyuan/blog/BlogApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/SysParamService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/controller/SysParamController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding>
-            <element signature="method#listAll#0;class#SysParamController#0" expanded="false" />
-            <element signature="method#list#0;class#SysParamController#0" expanded="false" />
-            <element signature="method#info#0;class#SysParamController#0" expanded="false" />
-            <element signature="method#save#0;class#SysParamController#0" expanded="false" />
-            <element signature="method#update#0;class#SysParamController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysParamServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/common/base/AbstractController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
-          <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-annotation/3.0.1/mybatis-plus-annotation-3.0.1.jar!/com/baomidou/mybatisplus/annotation/TableField.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="32" column="47" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/common/util/PageUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="method#PageUtils#0;class#PageUtils#0" expanded="false" />
+            <element signature="e#310#311#0" expanded="false" />
+            <element signature="e#384#385#0" expanded="false" />
+            <element signature="e#417#418#0" expanded="false" />
+            <element signature="e#457#458#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.0.1/mybatis-plus-core-3.0.1-sources.jar!/com/baomidou/mybatisplus/core/metadata/IPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1628">
-          <caret line="80" column="25" lean-forward="true" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-search/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-search/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.9.RELEASE/spring-data-commons-2.1.9.RELEASE.jar!/org/springframework/data/annotation/Id.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.4/lombok-1.18.4.jar!/lombok/Data.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20-sources.jar!/io/swagger/annotations/ApiModelProperty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-555">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/common/fill/MyMetaObjectHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#insertFill#0;class#MyMetaObjectHandler#0" expanded="false" />
-            <element signature="method#updateFill#0;class#MyMetaObjectHandler#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/mapper/article/BlogArticleContentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/resources/mapper/article/BlogArticleContentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/resources/mapper/article/BlogArticleInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1584501875504" expanded="true" signature="689:983" ph="SELECT FROM blog_article_info" />
-            <marker date="1584501875504" expanded="true" signature="2069:2240" ph="SELECT FROM blog_article_info" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/article/service/IBlogArticleInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/impl/BlogArticleTagServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/xyblog-security/src/main/java/cn/xinyuan/blog/security/controller/SysLoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="30" column="54" lean-forward="true" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+          <caret line="84" column="31" lean-forward="false" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+          <folding>
+            <element signature="method#login#0;class#SysLoginController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-security/src/main/java/cn/xinyuan/blog/security/service/SysUserTokenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-security/src/main/java/cn/xinyuan/blog/security/service/impl/ShiroServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-673">
+          <caret line="79" column="51" lean-forward="true" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
+          <folding>
+            <element signature="method#getUserPermissions#0;class#ShiroServiceImpl#0" expanded="false" />
+            <element signature="method#queryByToken#0;class#ShiroServiceImpl#0" expanded="false" />
+            <element signature="e#2530#2531#0" expanded="false" />
+            <element signature="e#2585#2586#0" expanded="false" />
+            <element signature="e#2744#2745#0" expanded="false" />
+            <element signature="e#2812#2813#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-security/src/main/java/cn/xinyuan/blog/security/service/ShiroService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-security/src/main/java/cn/xinyuan/blog/security/OAuth2Realm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="65" column="63" lean-forward="true" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
+          <folding>
+            <element signature="method#doGetAuthorizationInfo#0;class#OAuth2Realm#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/common/util/RedisUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="103" column="18" lean-forward="false" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
+          <folding>
+            <element signature="e#2561#2562#0" expanded="false" />
+            <element signature="e#2604#2605#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/mapper/sys/SysUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysUserRoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127">
+          <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding>
+            <element signature="method#queryRoleIdList#0;class#SysUserRoleServiceImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/SysUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/ISysUserRoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-security/src/main/java/cn/xinyuan/blog/security/service/impl/SysUserTokenServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="75" column="35" lean-forward="false" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
+          <folding>
+            <element signature="method#createToken#0;class#SysUserTokenServiceImpl#0" expanded="false" />
+            <element signature="method#logout#0;class#SysUserTokenServiceImpl#0" expanded="false" />
+            <element signature="method#refreshToken#0;class#SysUserTokenServiceImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/SysMenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="1073" column="19" lean-forward="false" selection-start-line="1073" selection-start-column="19" selection-end-line="1073" selection-end-column="19" />
+          <folding>
+            <element signature="method#equals#0;class#Long#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/common/constants/SysConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysMenuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/controller/SysMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="37" column="51" lean-forward="true" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/impl/BlogCategoryInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          <folding>
+            <element signature="method#queryListParentId#0;class#BlogCategoryInfoServiceImpl#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/article/controller/ArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="method#updateStatus#0;class#ArticleController#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="118" column="7" lean-forward="true" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
+          <folding>
+            <element signature="method#list#0;class#CategoryController#0" expanded="true" />
+            <element signature="method#select#0;class#CategoryController#0" expanded="true" />
+            <element signature="method#info#0;class#CategoryController#0" expanded="true" />
+            <element signature="method#save#0;class#CategoryController#0" expanded="true" />
+            <element signature="method#verifyCategory#0;class#CategoryController#0" expanded="true" />
+            <element signature="method#update#0;class#CategoryController#0" expanded="true" />
+            <element signature="method#delete#0;class#CategoryController#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/operation/BlogArticleTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/operation/BlogCategoryInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="56" column="27" lean-forward="true" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/operation/BlogLink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/operation/BlogRecommend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/operation/BlogTagInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="46" column="32" lean-forward="false" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/operation/VO/BlogRecommendVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/article/DO/BlogArticleInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="979">
+          <caret line="55" column="7" lean-forward="true" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/article/DTO/ArticleContentDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1280,136 +1303,182 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-annotation/3.0.1/mybatis-plus-annotation-3.0.1.jar!/com/baomidou/mybatisplus/annotation/IdType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-annotation/3.0.1/mybatis-plus-annotation-3.0.1.jar!/com/baomidou/mybatisplus/annotation/FieldFill.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/common/base/baseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/article/DO/BlogArticleInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1184">
-          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/article/service/impl/BlogArticleContentServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/article/VO/ArticleVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding>
-            <element signature="method#deleteBatchIds#0;class#BlogArticleContentServiceImpl#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="421">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-962">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/article/DO/BlogArticleContent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="436">
+          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/article/controller/ArticleController.java">
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysRole.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="method#listArticle#0;class#ArticleController#0" expanded="false" />
-            <element signature="method#info#0;class#ArticleController#0" expanded="false" />
-            <element signature="method#saveArticle#0;class#ArticleController#0" expanded="false" />
-            <element signature="method#deleteArticleBatch#0;class#ArticleController#0" expanded="false" />
-            <element signature="method#updateArticle#0;class#ArticleController#0" expanded="false" />
-            <element signature="method#updateStatus#0;class#ArticleController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-portal/src/main/java/cn/xinyuan/blog/portal/article/controller/ArticleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
-          <folding>
-            <element signature="method#getArticleList#0;class#ArticleController#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-portal/src/main/java/cn/xinyuan/blog/portal/article/service/ArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        <state relative-caret-position="518">
+          <caret line="43" column="32" lean-forward="false" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/mapper/article/BlogArticleInfoMapper.java">
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="27" column="61" lean-forward="true" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
+        <state relative-caret-position="495">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-portal/src/main/java/cn/xinyuan/blog/portal/article/service/impl/ArticleServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysUserRole.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="method#getArticleById#0;class#ArticleServiceImpl#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/article/service/impl/BlogArticleInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="method#deleteArticlePatch#0;class#BlogArticleInfoServiceImpl#0" expanded="true" />
-            <element signature="method#getArticle#0;class#BlogArticleInfoServiceImpl#0" expanded="true" />
-            <element signature="method#updateArticle#0;class#BlogArticleInfoServiceImpl#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.0.1/mybatis-plus-core-3.0.1-sources.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="160" column="6" lean-forward="false" selection-start-line="160" selection-start-column="6" selection-end-line="160" selection-end-column="6" />
+        <state relative-caret-position="535">
+          <caret line="36" column="48" lean-forward="false" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/impl/BlogCategoryInfoServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DO/SysRoleMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="41" column="77" lean-forward="false" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="77" />
+        <state relative-caret-position="569">
+          <caret line="40" column="48" lean-forward="false" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/DTO/SysUserToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/Vo/SysLoginUserInfoVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-common/src/main/java/cn/xinyuan/blog/entity/sys/Vo/SysLoginForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/IBlogTagInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/impl/BlogTagInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
           <folding>
-            <element signature="method#queryListParentId#0;class#BlogCategoryInfoServiceImpl#0" expanded="true" />
+            <element signature="method#queryPage#0;class#BlogTagInfoServiceImpl#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/controller/TagController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="91" column="54" lean-forward="false" selection-start-line="91" selection-start-column="54" selection-end-line="91" selection-end-column="54" />
+          <folding>
+            <element signature="method#list#0;class#TagController#0" expanded="true" />
+            <element signature="method#update#0;class#TagController#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/controller/RecommendController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="37" column="51" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+          <folding>
+            <element signature="method#select#0;class#RecommendController#0" expanded="true" />
+            <element signature="method#info#0;class#RecommendController#0" expanded="true" />
+            <element signature="method#updateTop#0;class#RecommendController#0" expanded="true" />
+            <element signature="method#delete#0;class#RecommendController#0" expanded="true" />
+            <element signature="method#deleteByArticleId#0;class#RecommendController#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/IBlogRecommendService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/operation/service/impl/BlogRecommendServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="37" column="52" lean-forward="true" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
+          <folding>
+            <element signature="method#deleteByArticleId#0;class#BlogRecommendServiceImpl#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/controller/SysUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyblog-admin/src/main/java/cn/xinyuan/blog/admin/sys/service/impl/SysUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding>
+            <element signature="method#deleteBatch#0;class#SysUserServiceImpl#0" expanded="true" />
+            <element signature="method#updateUser#0;class#SysUserServiceImpl#0" expanded="true" />
           </folding>
         </state>
       </provider>

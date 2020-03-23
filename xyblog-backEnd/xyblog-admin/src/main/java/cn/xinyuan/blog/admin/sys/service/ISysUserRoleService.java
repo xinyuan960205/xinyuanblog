@@ -16,7 +16,7 @@ import java.util.List;
  */
 public interface ISysUserRoleService extends IService<SysUserRole> {
 
-    int deleteBatch(Integer[] userIds);
+    int deleteBatch(Long[] userIds);
 
     List<Integer> queryRoleIdList(Integer userId);
 

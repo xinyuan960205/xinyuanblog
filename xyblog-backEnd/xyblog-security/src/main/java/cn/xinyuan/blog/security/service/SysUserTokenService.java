@@ -15,7 +15,7 @@ public interface SysUserTokenService {
      * @param userId
      * @return
      */
-    Result createToken(Integer userId);
+    Result createToken(Long userId);
 
     /**
      * 查询token
@@ -28,12 +28,12 @@ public interface SysUserTokenService {
      * 退出登录
      * @param userId
      */
-    void logout(Integer userId);
+    void logout(Long userId);
 
     /**
      * 续期
      * @param userId
      * @param token
      */
-    void refreshToken(Integer userId, String token);
+    void refreshToken(Long userId, String token);
 }

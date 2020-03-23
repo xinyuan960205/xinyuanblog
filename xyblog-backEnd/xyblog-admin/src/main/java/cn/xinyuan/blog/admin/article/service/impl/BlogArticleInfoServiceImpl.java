@@ -87,7 +87,7 @@ public class BlogArticleInfoServiceImpl extends ServiceImpl<BlogArticleInfoMappe
         ArticleContentDTO articleContentDTO = new ArticleContentDTO();
         BlogArticleInfo blogArticleInfo = baseMapper.selectById(articleId);
         BeanUtils.copyProperties(blogArticleInfo, articleContentDTO);
-        articleContentDTO.setTagList(iBlogArticleTagService.getTagsByArticleId(Long.valueOf(articleId)));
+        articleContentDTO.setTagList(iBlogArticleTagService.getTagsByArticleId(articleId));
         articleContentDTO.setContent(iBlogArticleContentService.getContentByArticleId(articleId));
         return articleContentDTO;
     }
@@ -105,7 +105,7 @@ public class BlogArticleInfoServiceImpl extends ServiceImpl<BlogArticleInfoMappe
     }
 
     @Override
-    public boolean checkByCategory(Integer id) {
+    public boolean checkByCategory(Long id) {
         List<BlogArticleInfo> list = baseMapper.selectList(new QueryWrapper<BlogArticleInfo>().lambda()
                 .like(BlogArticleInfo::getCategoryId, id));
         return list.size()>0;
