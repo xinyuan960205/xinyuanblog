@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -24,6 +25,7 @@ import java.util.List;
  * @Author: xinyuan
  * @CreateDate: 2020/1/24 14:26
  */
+@EqualsAndHashCode(callSuper = true)
 @Data
 @ApiModel(value="SysUser对象", description="用户管理")
 public class SysUser extends baseEntity implements Serializable {
@@ -54,6 +56,7 @@ public class SysUser extends baseEntity implements Serializable {
     private Long createUserId;
 
     @TableField(exist=false)
-    private List<Integer> roleIdList;
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
+    private List<Long> roleIdList;
 
 }

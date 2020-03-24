@@ -77,9 +77,9 @@ export default {
             if (data && data.code === 200) {
               this.dataForm.roleName = data.data.roleName
               this.dataForm.remark = data.data.remark
-              var idx = data.role.menuIdList.indexOf(this.tempKey)
+              var idx = data.data.menuIdList.indexOf(this.tempKey)
               if (idx !== -1) {
-                data.role.menuIdList.splice(idx, data.data.menuIdList.length - idx)
+                data.data.menuIdList.splice(idx, data.data.menuIdList.length - idx)
               }
               this.$refs.menuListTree.setCheckedKeys(data.data.menuIdList)
             }

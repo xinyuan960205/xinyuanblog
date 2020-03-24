@@ -1,7 +1,6 @@
 package cn.xinyuan.blog.admin.sys.service.impl;
 
 import cn.xinyuan.blog.admin.sys.service.ISysRoleMenuService;
-import cn.xinyuan.blog.entity.sys.DO.SysMenu;
 import cn.xinyuan.blog.entity.sys.DO.SysRole;
 import cn.xinyuan.blog.entity.sys.DO.SysRoleMenu;
 import cn.xinyuan.blog.mapper.sys.SysRoleMenuMapper;
@@ -45,8 +44,8 @@ public class SysRoleMenuServiceImpl extends ServiceImpl<SysRoleMenuMapper, SysRo
     }
 
     @Override
-    public int deleteBatch(Integer[] roleIdList) {
-        for(Integer id : roleIdList){
+    public int deleteBatch(Long[] roleIdList) {
+        for(Long id : roleIdList){
             baseMapper.delete(new QueryWrapper<SysRoleMenu>().lambda()
                     .eq(SysRoleMenu::getRoleId, id));
         }
@@ -54,7 +53,7 @@ public class SysRoleMenuServiceImpl extends ServiceImpl<SysRoleMenuMapper, SysRo
     }
 
     @Override
-    public List<Integer> queryMenuIdList(Integer roleId) {
+    public List<Integer> queryMenuIdList(Long roleId) {
         List<SysRoleMenu> sysRoleMenus = baseMapper.selectList(new QueryWrapper<SysRoleMenu>().lambda()
                 .eq(SysRoleMenu::getRoleId, roleId));
         List<Integer> menuList=new ArrayList<>();

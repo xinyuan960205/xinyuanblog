@@ -9,6 +9,7 @@ import cn.xinyuan.blog.common.util.PageUtils;
 import cn.xinyuan.blog.common.validator.ValidatorUtils;
 import cn.xinyuan.blog.common.validator.group.AddGroup;
 import cn.xinyuan.blog.common.validator.group.UpdateGroup;
+import cn.xinyuan.blog.entity.sys.DO.SysRole;
 import cn.xinyuan.blog.entity.sys.DO.SysUser;
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang.StringUtils;
@@ -133,11 +134,11 @@ public class SysUserController extends AbstractController{
      */
     @GetMapping("/info/{userId}")
     @RequiresPermissions("sys:user:info")
-    public Result info(@PathVariable("userId") Integer userId){
+    public Result info(@PathVariable("userId") Long userId){
         SysUser user = sysUserService.getById(userId);
 
         //获取用户所属的角色列表
-        List<Integer> roleIdList = iSysUserRoleService.queryRoleIdList(userId);
+        List<Long> roleIdList = iSysUserRoleService.queryRoleIdList(userId);
         user.setRoleIdList(roleIdList);
 
         return Result.success(user);

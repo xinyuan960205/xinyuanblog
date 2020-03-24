@@ -54,7 +54,7 @@ public class SysParamController extends AbstractController{
      */
     @GetMapping("/info/{id}")
     @RequiresPermissions("sys:param:info")
-    public Result info(@PathVariable("id") String id){
+    public Result info(@PathVariable("id") Long id){
         SysParam param = sysParamService.getById(id);
 
         return Result.success(param);
@@ -88,7 +88,7 @@ public class SysParamController extends AbstractController{
      */
     @DeleteMapping("/delete")
     @RequiresPermissions("sys:param:delete")
-    public Result delete(@RequestBody String[] ids){
+    public Result delete(@RequestBody Long[] ids){
         sysParamService.removeByIds(Arrays.asList(ids));
 
         return Result.success();

@@ -18,7 +18,7 @@ public interface ISysRoleMenuService extends IService<SysRoleMenu> {
 
     int insertByRole(SysRole role);
 
-    int deleteBatch(Integer[] roleIdList);
+    int deleteBatch(Long[] roleIdList);
 
-    List<Integer> queryMenuIdList(Integer roleId);
+    List<Integer> queryMenuIdList(Long roleId);
 }

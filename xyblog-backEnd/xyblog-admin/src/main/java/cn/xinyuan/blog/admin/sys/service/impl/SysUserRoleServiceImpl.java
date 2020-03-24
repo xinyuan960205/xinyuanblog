@@ -38,24 +38,24 @@ public class SysUserRoleServiceImpl extends ServiceImpl<SysUserRoleMapper, SysUs
     }
 
     @Override
-    public List<Integer> queryRoleIdList(Integer userId) {
+    public List<Long> queryRoleIdList(Long userId) {
         List<SysUserRole> sysUserRoles = baseMapper.selectList(new QueryWrapper<SysUserRole>().lambda()
                 .eq(SysUserRole::getUserId, userId));
-        List<Integer> list = new ArrayList<>();
+        List<Long> list = new ArrayList<>();
         for(SysUserRole sysUserRole : sysUserRoles){
-            list.add(Math.toIntExact(sysUserRole.getRoleId()));
+            list.add(sysUserRole.getRoleId());
         }
         return list;
     }
 
     @Override
     public int insertByUser(SysUser user) {
-        List<Integer> roleIdList=user.getRoleIdList();
+        List<Long> roleIdList=user.getRoleIdList();
         if(!CollectionUtils.isEmpty(roleIdList)){
-            for(Integer id : roleIdList){
+            for(Long id : roleIdList){
                 SysUserRole sysUserRole=new SysUserRole();
-                sysUserRole.setRoleId(Long.valueOf(id));
-                sysUserRole.setUserId(Long.valueOf(user.getId()));
+                sysUserRole.setRoleId(id);
+                sysUserRole.setUserId(user.getId());
                 baseMapper.insert(sysUserRole);
             }
         }

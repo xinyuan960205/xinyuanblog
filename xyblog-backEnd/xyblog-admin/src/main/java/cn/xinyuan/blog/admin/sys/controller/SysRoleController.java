@@ -108,7 +108,7 @@ public class SysRoleController extends AbstractController {
      */
     @GetMapping("/info/{roleId}")
     @RequiresPermissions("sys:role:info")
-    public Result info(@PathVariable Integer roleId){
+    public Result info(@PathVariable Long roleId){
         SysRole role = iSysRoleService.getById(roleId);
         List<Integer> menuIdList=iSysRoleMenuService.queryMenuIdList(roleId);
         role.setMenuIdList(menuIdList);
@@ -122,7 +122,7 @@ public class SysRoleController extends AbstractController {
      */
     @DeleteMapping("/delete")
     @RequiresPermissions("sys:role:delete")
-    public Result delete(@RequestBody Integer[] roleIds){
+    public Result delete(@RequestBody Long[] roleIds){
         iSysRoleService.deleteBatch(roleIds);
 
         return Result.success();

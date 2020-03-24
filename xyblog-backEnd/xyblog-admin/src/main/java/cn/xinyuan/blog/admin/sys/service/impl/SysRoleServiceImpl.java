@@ -67,7 +67,9 @@ public class SysRoleServiceImpl extends ServiceImpl<SysRoleMapper, SysRole> impl
     public int updateRole(SysRole role) {
         baseMapper.updateById(role);
         //关系数据先删除，再添加
-        iSysRoleMenuService.deleteBatch(new Integer[]{Math.toIntExact(role.getId())});
+        iSysRoleMenuService.deleteBatch(new Long[]{role.getId()});
+        //保存角色菜单关系数据
+        iSysRoleMenuService.insertByRole(role);
         return 1;
     }
 
@@ -77,7 +79,7 @@ public class SysRoleServiceImpl extends ServiceImpl<SysRoleMapper, SysRole> impl
      * @return
      */
     @Override
-    public int deleteBatch(Integer[] roleIds) {
+    public int deleteBatch(Long[] roleIds) {
         baseMapper.deleteBatchIds(Arrays.asList(roleIds));
         iSysRoleMenuService.deleteBatch(roleIds);
         return 1;

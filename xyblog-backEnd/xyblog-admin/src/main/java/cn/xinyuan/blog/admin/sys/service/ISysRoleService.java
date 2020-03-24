@@ -22,5 +22,5 @@ public interface ISysRoleService extends IService<SysRole> {
 
     int updateRole(SysRole role);
 
-    int deleteBatch(Integer[] roleIds);
+    int deleteBatch(Long[] roleIds);
 }
