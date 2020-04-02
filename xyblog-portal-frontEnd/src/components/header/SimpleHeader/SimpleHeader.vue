@@ -10,8 +10,8 @@
       <div id="header"  v-show="show">
     <router-link id="logo" to="/">
       <img src="../../../assets/logo.png">
-      <span class="title">DB's Blog</span>
-      <span class="motto">success belongs to the persevering</span>
+      <span class="title">xinyuan's Blog</span>
+      <span class="motto">嘻嘻嘻</span>
     </router-link>
     <ul id="nav">
       <li>

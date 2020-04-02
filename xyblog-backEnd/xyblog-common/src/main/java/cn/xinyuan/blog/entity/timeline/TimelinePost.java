@@ -12,7 +12,7 @@ import java.util.Date;
  */
 @Data
 public class TimelinePost {
-    private Integer id;
+    private Long id;
 
     private String title;
 

@@ -176,6 +176,24 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                 </plugin>
+                <!--&lt;!&ndash; Docker maven plugin &ndash;&gt;-->
+                <!--<plugin>-->
+                    <!--<groupId>com.spotify</groupId>-->
+                    <!--<artifactId>docker-maven-plugin</artifactId>-->
+                    <!--<version>1.0.0</version>-->
+                    <!--<configuration>-->
+                        <!--<imageName>xyblog/${project.artifactId}</imageName>-->
+                        <!--<dockerDirectory>src/main/docker</dockerDirectory>-->
+                        <!--<resources>-->
+                            <!--<resource>-->
+                                <!--<targetPath>/</targetPath>-->
+                                <!--<directory>${project.build.directory}</directory>-->
+                                <!--<include>${project.build.finalName}.jar</include>-->
+                            <!--</resource>-->
+                        <!--</resources>-->
+                    <!--</configuration>-->
+                <!--</plugin>-->
+                <!--&lt;!&ndash; Docker maven plugin &ndash;&gt;-->
             </plugins>
         </pluginManagement>
     </build>

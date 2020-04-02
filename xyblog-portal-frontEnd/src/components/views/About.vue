@@ -2,8 +2,8 @@
   <div class="about">
     <img class="background" src="../../assets/background.jpg" alt="">
     <img class="avatar" src="../../assets/avatar.jpg" alt="">
-    <p class="name">Bobbi</p>
-    <p class="desc">Write the code, Change the World</p>
+    <p class="name">xinyuan</p>
+    <p class="desc">嘻嘻嘻</p>
     <ul class="social">
       <li><a href="https://github.com/llldddbbb" target="_blank"><img src="../../assets/icon/GitHub.png" alt=""></a></li>
     </ul>
