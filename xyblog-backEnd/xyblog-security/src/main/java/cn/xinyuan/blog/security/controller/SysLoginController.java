@@ -10,6 +10,10 @@ import cn.xinyuan.blog.security.service.SysCaptchaService;
 import cn.xinyuan.blog.security.service.SysUserTokenService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.IOUtils;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.crypto.hash.Sha256Hash;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -65,7 +69,7 @@ public class SysLoginController extends AbstractController{
         SysUser user = sysUserMapper.selectOne(new QueryWrapper<SysUser>()
                 .lambda()
                 .eq(SysUser :: getUsername, sysLoginForm.getUsername()));
-        if(user == null || !user.getPassword().equals(sysLoginForm.getPassword())){
+        if(user == null || !user.getPassword().equals(new Sha256Hash(sysLoginForm.getPassword(),user.getSalt()).toHex())){
             //用户名或密码错误
             return Result.failed(ErrorEnum.USERNAME_OR_PASSWORD_WRONG);
         }

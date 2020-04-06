@@ -11,6 +11,7 @@ import cn.xinyuan.blog.common.validator.group.AddGroup;
 import cn.xinyuan.blog.common.validator.group.UpdateGroup;
 import cn.xinyuan.blog.entity.sys.DO.SysRole;
 import cn.xinyuan.blog.entity.sys.DO.SysUser;
+import cn.xinyuan.blog.entity.sys.DTO.PasswordForm;
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
@@ -59,28 +60,28 @@ public class SysUserController extends AbstractController{
         return Result.success(page);
     }
 
-//    /**
-//     * 修改密码
-//     * @param passwordForm
-//     * @return
-//     */
-//    @PutMapping("/password")
-//    public Result password(@RequestBody PasswordForm passwordForm){
-//        if(StringUtils.isEmpty(passwordForm.getNewPassword())) {
-//            return Result.error("新密码不能为空");
-//        }
-//        //sha256加密
-//        String password = new Sha256Hash(passwordForm.getPassword(), getUser().getSalt()).toHex();
-//        //sha256加密
-//        String newPassword = new Sha256Hash(passwordForm.getNewPassword(), getUser().getSalt()).toHex();
-//
-//        boolean flag = sysUserService.updatePassword(getUserId(), password, newPassword);
-//        if(!flag){
-//            return Result.failed("原密码不正确");
-//        }
-//
-//        return Result.success();
-//    }
+    /**
+     * 修改密码
+     * @param passwordForm
+     * @return
+     */
+    @PutMapping("/password")
+    public Result password(@RequestBody PasswordForm passwordForm){
+        if(StringUtils.isEmpty(passwordForm.getNewPassword())) {
+            return Result.failed("新密码不能为空");
+        }
+        //sha256加密
+        String password = new Sha256Hash(passwordForm.getPassword(), getUser().getSalt()).toHex();
+        //sha256加密
+        String newPassword = new Sha256Hash(passwordForm.getNewPassword(), getUser().getSalt()).toHex();
+
+        boolean flag = sysUserService.updatePassword(getUserId(), password, newPassword);
+        if(!flag){
+            return Result.failed("原密码不正确");
+        }
+
+        return Result.success();
+    }
 
     /**
      * 保存用户
@@ -90,7 +91,11 @@ public class SysUserController extends AbstractController{
     public Result save(@RequestBody SysUser user){
         ValidatorUtils.validateEntity(user, AddGroup.class);
 
+        //设置该用户的创建人
         user.setCreateUserId(getUserId());
+        //将密码使用Sha256加密
+        String password = new Sha256Hash(user.getPassword(), getUser().getSalt()).toHex();
+        user.setPassword(password);
         sysUserService.saveUser(user);
 
         return Result.success();

@@ -16,10 +16,6 @@ import java.util.Set;
 
 /**
  * OAuth2Realm
- *
- * @author bobbi
- * @date 2018/10/07 16:39
- * @email 571002217@qq.com
  * @description Shiro 认证类
  */
 @Component
@@ -30,7 +26,7 @@ public class OAuth2Realm extends AuthorizingRealm {
 
     @Override
     public boolean supports(AuthenticationToken token) {
-        return token instanceof OAuth2Token;
+        return token instanceof OAuth2Token;  //表示此Realm只支持OAuth2Token类型
     }
 
     /**

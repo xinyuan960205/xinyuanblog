@@ -95,4 +95,13 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
         iSysUserRoleService.insertByUser(user);
         return 1;
     }
+
+    @Override
+    public boolean updatePassword(Long userId, String password, String newPassword) {
+        SysUser sysUser = baseMapper.selectById(userId);
+        if(!sysUser.getPassword().equals(password)) return false;
+        sysUser.setPassword(newPassword);
+        baseMapper.updateById(sysUser);
+        return true;
+    }
 }
